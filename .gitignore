@@ -1,0 +1,18 @@
+# Secrets — NEVER commit .env (TMDB key, JWT secret live here)
+.env
+
+# Dependencies
+node_modules/
+
+# Runtime data (SQLite DB + uploads are local-only)
+data/
+*.db
+*.db-wal
+*.db-shm
+uploads/*
+!uploads/.gitkeep
+
+# Logs / OS
+*.log
+.DS_Store
+Thumbs.db

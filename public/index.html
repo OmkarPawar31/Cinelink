@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>CineLink — Watch. Share. Connect.</title>
+<meta name="description" content="Track what you watch, share what you love, connect with people who love movies and series.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/app.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2305070A'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23E5093B'%3E◉%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<div id="scrollbar"></div>
+<div id="grain"></div><div id="vignette"></div>
+<div id="cursor"></div>
+
+<aside id="sidebar" aria-label="Primary">
+  <a class="logo" href="#/" data-nav>◉ <span>CINE<b>LINK</b></span></a>
+  <nav id="sideNav"></nav>
+  <div class="side-foot">
+    <button id="profileBtn" class="side-profile" data-nav></button>
+    <a href="#/settings" data-nav class="ghost-btn">⚙ Settings</a>
+  </div>
+</aside>
+
+<div id="main">
+  <header id="topbar">
+    <a class="logo m-only" href="#/" data-nav>◉ CINELINK</a>
+    <div class="search-wrap">
+      <input id="globalSearch" type="search" placeholder="Search movies, series, people, users…" autocomplete="off" aria-label="Global search">
+      <div id="searchSuggest" class="suggest" hidden></div>
+    </div>
+    <div class="top-actions">
+      <button id="notifBtn" class="icon-btn" aria-label="Notifications">🔔<i id="notifBadge" class="badge" hidden></i></button>
+      <button id="authBtn" class="cta-btn">Sign in</button>
+    </div>
+  </header>
+  <div id="notifDrop" class="dropdown-panel" hidden></div>
+  <main id="view" tabindex="-1"></main>
+  <footer id="appfoot">◉ CineLink · Watch. Share. Connect. &nbsp;·&nbsp; This product uses the TMDB API but is not endorsed or certified by TMDB. &nbsp;·&nbsp; <a href="#/settings">Privacy</a> · <a href="#/settings">Terms</a> · <a href="#/settings">Report</a></footer>
+</div>
+
+<nav id="bottomnav" aria-label="Mobile"></nav>
+<div id="modalRoot"></div>
+<div id="lightboxRoot"></div>
+<div id="toasts" aria-live="polite"></div>
+
+<script src="/js/core.js"></script>
+<script src="/js/title.js"></script>
+<script src="/js/pages.js"></script>
+</body>
+</html>
